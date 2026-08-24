@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ascentiant Health — Executive Scorecard Preview</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+body { font-family: 'Inter', system-ui, sans-serif; margin: 0; }
+.kpi-card { transition: all 0.25s ease; }
+.kpi-card:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(0,0,0,0.08); }
+.kpi-value { font-size: clamp(1.6rem, 2vw, 2.2rem); white-space: nowrap; }
+.chart-container { height: 280px; }
+</style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+
+<div class="max-w-7xl mx-auto bg-white shadow-sm border-b">
+  <div class="px-6 py-6 flex justify-between items-center flex-wrap gap-4">
+    <div class="flex items-center gap-4">
+      <img src="../Images/ascentiant-health-logo.png" alt="Ascentiant Health" class="h-10">
+      <div>
+        <h1 class="text-xl md:text-2xl font-semibold">Ascentiant Health Analytics</h1>
+        <p class="text-sm text-slate-500">Executive Scorecard • Platform Preview</p>
+      </div>
+    </div>
+    <span class="px-4 py-2 bg-emerald-100 text-emerald-700 text-sm font-semibold rounded-xl">Elite RCM Performance</span>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-6 py-8">
+
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 mb-10">
+  <div class="kpi-card bg-white rounded-2xl shadow p-5"><p class="text-sm text-slate-500">Gross Charges</p><p class="kpi-value font-semibold mt-2">$1,245,678</p></div>
+  <div class="kpi-card bg-emerald-50 border border-emerald-200 rounded-2xl shadow p-5"><p class="text-sm text-emerald-700">Total Collections</p><p class="kpi-value font-semibold text-emerald-700 mt-2">$1,120,000</p><p class="text-xs text-emerald-600 mt-1">90% of charges</p></div>
+  <div class="kpi-card bg-emerald-600 text-white rounded-2xl shadow p-5"><p class="text-sm opacity-90">Qualified Visits</p><p class="kpi-value font-semibold mt-2">2,345</p></div>
+  <div class="kpi-card bg-white rounded-2xl shadow p-5"><p class="text-sm text-slate-500">Contractual Adj.</p><p class="kpi-value font-semibold mt-2">($23,456)</p></div>
+  <div class="kpi-card bg-emerald-600 text-white rounded-2xl shadow p-5"><p class="text-sm opacity-90">AR Days</p><p class="kpi-value font-semibold mt-2">30</p></div>
+  <div class="kpi-card bg-emerald-600 text-white rounded-2xl shadow p-5"><p class="text-sm opacity-90">First Pass Rate</p><p class="kpi-value font-semibold mt-2">98%</p></div>
+</div>
+
+<div class="bg-white rounded-2xl shadow p-6 mb-10">
+  <h2 class="text-lg font-semibold mb-4">Provider Performance</h2>
+  <table class="w-full text-sm">
+    <thead><tr class="border-b"><th class="text-left py-3 text-slate-500">Provider</th><th class="text-right py-3 text-slate-500">Visits</th><th class="text-right py-3 text-slate-500">RHC</th><th class="text-right py-3 text-slate-500">Non-RHC</th><th class="text-right py-3 text-slate-500">Collection %</th><th class="text-right py-3 text-slate-500">Index</th></tr></thead>
+    <tbody class="divide-y">
+      <tr><td class="py-4 font-medium">Provider A</td><td class="text-right">1,214</td><td class="text-right">892</td><td class="text-right">322</td><td class="text-right text-emerald-600 font-semibold">95%</td><td class="text-right">98.7</td></tr>
+      <tr><td class="py-4 font-medium">Provider B</td><td class="text-right">1,087</td><td class="text-right">745</td><td class="text-right">342</td><td class="text-right text-emerald-600 font-semibold">96%</td><td class="text-right">97.4</td></tr>
+      <tr><td class="py-4 font-medium">Provider C</td><td class="text-right">956</td><td class="text-right">821</td><td class="text-right">135</td><td class="text-right text-emerald-600 font-semibold">94%</td><td class="text-right">98.9</td></tr>
+      <tr><td class="py-4 font-medium">Provider D</td><td class="text-right">1,034</td><td class="text-right">678</td><td class="text-right">356</td><td class="text-right text-emerald-600 font-semibold">97%</td><td class="text-right">99.2</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+  <div class="bg-white rounded-2xl shadow p-6">
+    <h2 class="text-lg font-semibold mb-2">Monthly Trends</h2>
+    <p class="text-xs text-slate-500 mb-4">Collections &amp; Visit Volume • Last 12 Months</p>
+    <div class="chart-container bg-slate-50 rounded-xl p-4">
+      <svg viewBox="0 0 600 300" class="w-full h-full">
+        <line x1="50" y1="250" x2="550" y2="250" stroke="#e2e8f0"/>
+        <line x1="50" y1="200" x2="550" y2="200" stroke="#e2e8f0"/>
+        <line x1="50" y1="150" x2="550" y2="150" stroke="#e2e8f0"/>
+        <path d="M50 230 Q150 190 250 200 Q350 170 450 140 Q550 110 550 85" stroke="#10b981" stroke-width="4" fill="none"/>
+        <path d="M50 250 Q150 210 250 205 Q350 185 450 165 Q550 135 550 110" stroke="#0ea5e9" stroke-width="4" fill="none"/>
+      </svg>
+    </div>
+  </div>
+  <div class="bg-white rounded-2xl shadow p-6">
+    <h2 class="text-lg font-semibold mb-2">Top CPT Codes</h2>
+    <p class="text-xs text-slate-500 mb-4">By Visit Volume • Last 30 Days</p>
+    <div class="chart-container flex items-end gap-4 bg-slate-50 rounded-xl p-6">
+      <div class="flex-1 text-center"><div class="bg-emerald-500 rounded-t-lg w-full" style="height:90px"></div><p class="text-sm font-medium mt-3">99213</p></div>
+      <div class="flex-1 text-center"><div class="bg-emerald-500 rounded-t-lg w-full" style="height:130px"></div><p class="text-sm font-medium mt-3">99214</p></div>
+      <div class="flex-1 text-center"><div class="bg-sky-500 rounded-t-lg w-full" style="height:160px"></div><p class="text-sm font-medium mt-3">99203</p></div>
+      <div class="flex-1 text-center"><div class="bg-emerald-500 rounded-t-lg w-full" style="height:185px"></div><p class="text-sm font-medium mt-3">G0439</p></div>
+      <div class="flex-1 text-center"><div class="bg-sky-500 rounded-t-lg w-full" style="height:220px"></div><p class="text-sm font-medium mt-3">99204</p></div>
+    </div>
+  </div>
+</div>
+
+<p class="text-center text-xs text-slate-400 pb-10">Representative platform preview. Actual client dashboards reflect live operational data.</p>
+</div>
+</body>
+</html>

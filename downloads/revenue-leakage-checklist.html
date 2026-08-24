@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G870YZ13MZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G870YZ13MZ');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revenue Leakage Checklist | Ascentiant Health</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 40px;
+      color: #333;
+      line-height: 1.4;
+      max-width: 900px;
+    }
+
+    .header {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 18px;
+      border-bottom: 3px solid #0052cc;
+    }
+
+    .logo { width: 190px; flex-shrink: 0; }
+
+    .company-info {
+      flex-grow: 1;
+      text-align: right;
+      font-size: 15px;
+      line-height: 1.3;
+      margin-top: 8px;
+    }
+
+    .company-info .top-line {
+      font-size: 21px;
+      color: #0052cc;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      color: #0052cc;
+      text-align: center;
+      font-size: 26px;
+      margin: 25px 0 16px 0;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 28px 0 8px 0;
+      color: #0052cc;
+      border-bottom: 2px solid #0052cc;
+      padding-bottom: 5px;
+    }
+
+    .category-desc {
+      font-size: 14px;
+      color: #555;
+      margin: 0 0 10px 0;
+      font-style: italic;
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px 0;
+    }
+
+    .checklist li {
+      padding: 9px 0;
+      font-size: 15px;
+      display: flex;
+      align-items: flex-start;
+      border-bottom: 1px solid #eee;
+    }
+
+    .checkbox {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #333;
+      margin-right: 14px;
+      flex-shrink: 0;
+      border-radius: 3px;
+      margin-top: 1px;
+    }
+
+    .meta-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0 30px 0;
+    }
+
+    .meta-table td {
+      border: 1px solid #666;
+      padding: 10px;
+    }
+
+    .meta-table .label {
+      font-weight: bold;
+      width: 28%;
+      background-color: #f8f8f8;
+    }
+
+    .impact-row {
+      display: flex;
+      gap: 20px;
+      margin-top: 8px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .impact-row span { flex: 1; }
+
+    .site-footer {
+      margin-top: 50px;
+      padding-top: 16px;
+      border-top: 2px solid #0052cc;
+      text-align: center;
+      font-size: 14px;
+      color: #0052cc;
+      font-weight: bold;
+    }
+
+    .print-btn {
+      display: block;
+      margin: 0 auto 24px;
+      padding: 12px 28px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      background: #0052cc;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .print-btn:hover { background: #003d99; }
+
+    @media print {
+      body { margin: 20px; }
+      .no-print { display: none !important; }
+      .checklist li { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="../Images/ascentiant-health-logo.png" alt="Ascentiant Health Logo" class="logo">
+    <div class="company-info">
+      <div class="top-line">
+        Ascentiant Health, <span style="color:#3498db;">an Ascentiant International Company</span>
+      </div>
+      1341 Distribution Way<br>
+      Suite 11 - Top Floor<br>
+      Vista, CA 92081
+    </div>
+  </div>
+
+  <button class="print-btn no-print" onclick="window.print()">Print / Save as PDF</button>
+
+  <h1>Revenue Leakage Checklist</h1>
+  <p class="intro">Identify hidden revenue gaps across your revenue cycle. Check each area you have audited in the past 12 months and note estimated dollar impact.</p>
+
+  <table class="meta-table">
+    <tr>
+      <td class="label">Organization</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="label">Review Period</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="label">Estimated Annual Leakage Identified</td>
+      <td>$ _________________________</td>
+    </tr>
+  </table>
+
+  <div class="section-title">Underpayments</div>
+  <p class="category-desc">Payers reimbursing below contracted rates, missing fee schedule updates, or incorrect contractual adjustments.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>Contracted rates loaded and maintained accurately in billing system</li>
+    <li><span class="checkbox"></span>Payment variance reports run monthly by payer and CPT</li>
+    <li><span class="checkbox"></span>Systematic underpayment patterns identified and appealed</li>
+    <li><span class="checkbox"></span>Lesser-of logic and multiple procedure reductions validated on remits</li>
+    <li><span class="checkbox"></span>Sequestration, withholds, and value-based adjustments reconciled</li>
+    <li><span class="checkbox"></span>Out-of-network or silent PPO payments reviewed for correct repricing</li>
+  </ul>
+  <div class="impact-row">
+    <span>Est. $ Impact: __________</span>
+    <span>Recovery Action Taken: __________</span>
+  </div>
+
+  <div class="section-title">Missed Charges</div>
+  <p class="category-desc">Services rendered but never captured in the charge master or transmitted on claims.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>Charge capture lag measured — target &lt; 24 hours from date of service</li>
+    <li><span class="checkbox"></span>Interface between clinical system and billing validated for completeness</li>
+    <li><span class="checkbox"></span>Ancillary services (labs, imaging, supplies, injections) audited against encounters</li>
+    <li><span class="checkbox"></span>Missed charge reports reviewed weekly by department leads</li>
+    <li><span class="checkbox"></span>Charge master includes all billable services performed in practice</li>
+    <li><span class="checkbox"></span>Late charge policy enforced with defined cutoff and escalation</li>
+  </ul>
+  <div class="impact-row">
+    <span>Est. $ Impact: __________</span>
+    <span>Recovery Action Taken: __________</span>
+  </div>
+
+  <div class="section-title">Authorization Failures</div>
+  <p class="category-desc">Services delivered without required authorization — resulting in denials or zero-pay outcomes.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>Auth-required service list maintained by payer and procedure</li>
+    <li><span class="checkbox"></span>Zero-pay claims analyzed for auth-related root causes</li>
+    <li><span class="checkbox"></span>Retroactive authorization process defined for emergent services</li>
+    <li><span class="checkbox"></span>Auth numbers linked to accounts and transmitted on claims</li>
+    <li><span class="checkbox"></span>Denial trends for auth failures reported to scheduling and clinical teams</li>
+    <li><span class="checkbox"></span>Staff trained on payer portal auth submission and status tracking</li>
+  </ul>
+  <div class="impact-row">
+    <span>Est. $ Impact: __________</span>
+    <span>Recovery Action Taken: __________</span>
+  </div>
+
+  <div class="section-title">Posting Errors</div>
+  <p class="category-desc">Payments applied incorrectly, leaving inflated A/R, unapplied cash, or inaccurate patient balances.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>ERA/EOB auto-posting accuracy audited monthly (target 98%+)</li>
+    <li><span class="checkbox"></span>Unapplied payment report reviewed and cleared within 30 days</li>
+    <li><span class="checkbox"></span>Contractual adjustment codes mapped correctly by payer</li>
+    <li><span class="checkbox"></span>Duplicate payment and recoupment offsets identified and resolved</li>
+    <li><span class="checkbox"></span>Patient responsibility transferred accurately after payer adjudication</li>
+    <li><span class="checkbox"></span>Credit balance resolution process compliant with refund timelines</li>
+  </ul>
+  <div class="impact-row">
+    <span>Est. $ Impact: __________</span>
+    <span>Recovery Action Taken: __________</span>
+  </div>
+
+  <div class="section-title">Contract Variance</div>
+  <p class="category-desc">Reimbursement not aligned with executed contracts — fee schedule gaps, wrong effective dates, or missing addenda.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>Executed contracts on file and mapped to payer IDs in billing system</li>
+    <li><span class="checkbox"></span>Fee schedule effective dates validated before billing begins</li>
+    <li><span class="checkbox"></span>New contract rates loaded within 30 days of execution</li>
+    <li><span class="checkbox"></span>Annual contract review conducted for top 10 payers by revenue</li>
+    <li><span class="checkbox"></span>Stop-loss, carve-outs, and supplemental payments tracked separately</li>
+    <li><span class="checkbox"></span>Rate changes communicated to coding and contracting teams promptly</li>
+  </ul>
+  <div class="impact-row">
+    <span>Est. $ Impact: __________</span>
+    <span>Recovery Action Taken: __________</span>
+  </div>
+
+  <div class="site-footer">ascentiant.health</div>
+
+</body>
+</html>

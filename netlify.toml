@@ -1,0 +1,86 @@
+# Ascentiant Health — static site deployment
+# Deploy: drag folder to Netlify, or connect repo and set publish directory to "."
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/Images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Clean URLs optional — site uses .html extensions
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+# Netlify automatically serves 404.html for missing pages when placed in publish root.
+
+# Legacy industry URL redirects
+[[redirects]]
+  from = "/industries/home-health.html"
+  to = "/industries/home-health-revenue-cycle-management.html"
+  status = 301
+
+[[redirects]]
+  from = "/industries/physical-therapy.html"
+  to = "/industries/physical-therapy-revenue-cycle-management.html"
+  status = 301
+
+[[redirects]]
+  from = "/industries/primary-care.html"
+  to = "/industries/primary-care-internal-medicine-revenue-cycle-management.html"
+  status = 301
+
+[[redirects]]
+  from = "/industries/behavioral-health.html"
+  to = "/industries/behavioral-health-revenue-cycle-management.html"
+  status = 301
+
+[[redirects]]
+  from = "/industries/laboratories.html"
+  to = "/industries/laboratory-revenue-cycle-management.html"
+  status = 301
+
+[[redirects]]
+  from = "/industries/multi-specialty.html"
+  to = "/industries/multi-specialty-physician-practice-revenue-cycle-management.html"
+  status = 301
+
+[[redirects]]
+  from = "/industries/occupational-therapy.html"
+  to = "/industries/other-healthcare-organizations-revenue-cycle-management.html"
+  status = 301
+
+[[redirects]]
+  from = "/industries/speech-therapy.html"
+  to = "/industries/other-healthcare-organizations-revenue-cycle-management.html"
+  status = 301
+
+[[redirects]]
+  from = "/industries/dme.html"
+  to = "/industries/other-healthcare-organizations-revenue-cycle-management.html"
+  status = 301
+
+[[redirects]]
+  from = "/industries/urgent-care.html"
+  to = "/industries/other-healthcare-organizations-revenue-cycle-management.html"
+  status = 301

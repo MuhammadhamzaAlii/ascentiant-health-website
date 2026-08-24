@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G870YZ13MZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G870YZ13MZ');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denial Prevention Guide | Ascentiant Health</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 40px;
+      color: #333;
+      line-height: 1.4;
+      max-width: 900px;
+    }
+
+    .header {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 18px;
+      border-bottom: 3px solid #0052cc;
+    }
+
+    .logo { width: 190px; flex-shrink: 0; }
+
+    .company-info {
+      flex-grow: 1;
+      text-align: right;
+      font-size: 15px;
+      line-height: 1.3;
+      margin-top: 8px;
+    }
+
+    .company-info .top-line {
+      font-size: 21px;
+      color: #0052cc;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      color: #0052cc;
+      text-align: center;
+      font-size: 26px;
+      margin: 25px 0 16px 0;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 28px 0 8px 0;
+      color: #0052cc;
+      border-bottom: 2px solid #0052cc;
+      padding-bottom: 5px;
+    }
+
+    .category-desc {
+      font-size: 14px;
+      color: #555;
+      margin: 0 0 10px 0;
+      font-style: italic;
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px 0;
+    }
+
+    .checklist li {
+      padding: 9px 0;
+      font-size: 15px;
+      display: flex;
+      align-items: flex-start;
+      border-bottom: 1px solid #eee;
+    }
+
+    .checkbox {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #333;
+      margin-right: 14px;
+      flex-shrink: 0;
+      border-radius: 3px;
+      margin-top: 1px;
+    }
+
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0 28px 0;
+      font-size: 14px;
+    }
+
+    .summary-table th, .summary-table td {
+      border: 1px solid #666;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    .summary-table th {
+      background-color: #0052cc;
+      color: #fff;
+      text-align: left;
+    }
+
+    .site-footer {
+      margin-top: 50px;
+      padding-top: 16px;
+      border-top: 2px solid #0052cc;
+      text-align: center;
+      font-size: 14px;
+      color: #0052cc;
+      font-weight: bold;
+    }
+
+    .print-btn {
+      display: block;
+      margin: 0 auto 24px;
+      padding: 12px 28px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #fff;
+      background: #0052cc;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .print-btn:hover { background: #003d99; }
+
+    @media print {
+      body { margin: 20px; }
+      .no-print { display: none !important; }
+      .checklist li { break-inside: avoid; }
+      .summary-table th { background-color: #0052cc !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="../Images/ascentiant-health-logo.png" alt="Ascentiant Health Logo" class="logo">
+    <div class="company-info">
+      <div class="top-line">
+        Ascentiant Health, <span style="color:#3498db;">an Ascentiant International Company</span>
+      </div>
+      1341 Distribution Way<br>
+      Suite 11 - Top Floor<br>
+      Vista, CA 92081
+    </div>
+  </div>
+
+  <button class="print-btn no-print" onclick="window.print()">Print / Save as PDF</button>
+
+  <h1>Denial Prevention Guide</h1>
+  <p class="intro">Common denial categories, root causes, and prevention checklists to protect first-pass claim acceptance and reduce revenue recovery effort.</p>
+
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>Denial Category</th>
+        <th>Typical Root Cause</th>
+        <th>Primary Prevention Owner</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Authorization / Referral</td>
+        <td>Missing or expired prior auth; referral not on file</td>
+        <td>Front-End / Scheduling</td>
+      </tr>
+      <tr>
+        <td>Eligibility / Coverage</td>
+        <td>Inactive coverage; wrong member ID; COB issues</td>
+        <td>Patient Access</td>
+      </tr>
+      <tr>
+        <td>Coding &amp; Medical Necessity</td>
+        <td>Invalid code pairs; insufficient documentation</td>
+        <td>Coding / Clinical Documentation</td>
+      </tr>
+      <tr>
+        <td>Timely Filing</td>
+        <td>Claims submitted past payer deadline</td>
+        <td>Billing Operations</td>
+      </tr>
+      <tr>
+        <td>Duplicate / COB</td>
+        <td>Duplicate claim submission; coordination of benefits error</td>
+        <td>Billing / Follow-Up</td>
+      </tr>
+      <tr>
+        <td>Credentialing / Enrollment</td>
+        <td>Provider not enrolled or effective date not met</td>
+        <td>Credentialing</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">Authorization &amp; Referral Denials</div>
+  <p class="category-desc">Among the most preventable denial types — typically caused by front-end gaps before date of service.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>Verify prior authorization requirements by CPT and payer at scheduling</li>
+    <li><span class="checkbox"></span>Obtain and document authorization numbers with effective date ranges</li>
+    <li><span class="checkbox"></span>Confirm referral and PCP assignment for HMO and managed care plans</li>
+    <li><span class="checkbox"></span>Link authorization numbers to the patient account before claim generation</li>
+    <li><span class="checkbox"></span>Re-verify authorization status for rescheduled or delayed procedures</li>
+    <li><span class="checkbox"></span>Train schedulers on payer-specific auth portals and turnaround times</li>
+  </ul>
+
+  <div class="section-title">Eligibility &amp; Coverage Denials</div>
+  <p class="category-desc">Coverage changes between scheduling and billing are a leading source of preventable denials.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>Run real-time eligibility at check-in for every visit</li>
+    <li><span class="checkbox"></span>Verify primary vs. secondary payer order (COB) before submission</li>
+    <li><span class="checkbox"></span>Confirm member ID, group number, and plan type match payer files</li>
+    <li><span class="checkbox"></span>Capture and verify subscriber relationship for dependent coverage</li>
+    <li><span class="checkbox"></span>Flag term dates and plan changes discovered during eligibility checks</li>
+    <li><span class="checkbox"></span>Establish self-pay workflow when coverage cannot be verified</li>
+  </ul>
+
+  <div class="section-title">Coding &amp; Medical Necessity Denials</div>
+  <p class="category-desc">Often appealable but best prevented through coding accuracy and documentation quality.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>Apply NCCI and payer-specific bundling edits before claim submission</li>
+    <li><span class="checkbox"></span>Ensure diagnosis codes support medical necessity for all procedures</li>
+    <li><span class="checkbox"></span>Validate modifier usage (25, 59, XE, XP, XS, XU) against documentation</li>
+    <li><span class="checkbox"></span>Conduct periodic coding audits with provider education feedback loops</li>
+    <li><span class="checkbox"></span>Monitor LCD/NCD and payer policy changes affecting your specialty</li>
+    <li><span class="checkbox"></span>Attach clinical documentation proactively when payer requires it</li>
+  </ul>
+
+  <div class="section-title">Timely Filing Denials</div>
+  <p class="category-desc">Hard denials with limited appeal options — prevention requires disciplined workflow management.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>Maintain payer-specific filing deadline reference by plan and state</li>
+    <li><span class="checkbox"></span>Track days from date of service to claim submission as a KPI</li>
+    <li><span class="checkbox"></span>Prioritize aged charges approaching filing limits in daily work queues</li>
+    <li><span class="checkbox"></span>Resolve claim holds and edits within 48 hours of identification</li>
+    <li><span class="checkbox"></span>Document proof of original submission for payer disputes</li>
+    <li><span class="checkbox"></span>Alert leadership when volume approaches timely filing risk thresholds</li>
+  </ul>
+
+  <div class="section-title">Duplicate &amp; Coordination of Benefits (COB)</div>
+  <p class="category-desc">Frequently caused by resubmissions, crossover claim errors, or incorrect payer sequencing.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>Search for existing claims before resubmitting corrected claims</li>
+    <li><span class="checkbox"></span>Confirm primary payer adjudication before billing secondary</li>
+    <li><span class="checkbox"></span>Apply primary EOB details accurately on secondary claims</li>
+    <li><span class="checkbox"></span>Track crossover claim status for Medicare and Medicaid patients</li>
+    <li><span class="checkbox"></span>Define clear resubmission vs. correction vs. appeal workflows</li>
+  </ul>
+
+  <div class="section-title">Credentialing &amp; Enrollment Denials</div>
+  <p class="category-desc">Claims rejected because the rendering provider is not recognized or not yet effective with the payer.</p>
+  <ul class="checklist">
+    <li><span class="checkbox"></span>Verify provider enrollment status before first claim to each payer</li>
+    <li><span class="checkbox"></span>Confirm effective dates align with date of service on every claim</li>
+    <li><span class="checkbox"></span>Validate rendering, billing, and service location NPIs on payer rosters</li>
+    <li><span class="checkbox"></span>Monitor revalidation deadlines and recredentialing cycles proactively</li>
+    <li><span class="checkbox"></span>Integrate credentialing status checks into billing workflow gates</li>
+  </ul>
+
+  <div class="site-footer">ascentiant.health</div>
+
+</body>
+</html>
